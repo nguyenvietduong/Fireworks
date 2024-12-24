@@ -2083,3 +2083,10 @@ if (IS_HEADER) {
             );
     }, 0);
 }
+
+function playAudio () {
+    const audio = document.getElementById('myAudio');
+        audio.play().catch(function (error) {
+        console.log('Autoplay blocked: ', error);
+    });
+}
